@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-
+import Link from "next/link";
 const Headerino = styled.header`
   display: block;
   position: fixed;
@@ -103,7 +103,9 @@ function Header() {
               <Ul>
                 <li style={{ marginRight: "30px" }}>События</li>
                 <li>
-                  <a href="/">Войти</a>
+                  <Link href="/">
+                    <a>Войти</a>
+                  </Link>
                 </li>
               </Ul>
             </Nav>
