@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import Link from 'next/link';
+import Link from "next/link";
 const Mainerino = styled.main`
   max-width: 100%;
   position: relative;
@@ -244,7 +244,7 @@ const HowSectionGridStepsItemDescription = styled.p`
 `;
 const VideoSection = styled.section`
   width: 100%;
-  height: 950px;
+  height: 957px;
   background-size: 100%;
   background: url("/Vectorbg.svg") no-repeat center;
   padding-top: 140px;
@@ -261,18 +261,30 @@ const VideoSectionVideoBlock = styled.div`
   height: 520px;
   display: flex;
   justify-content: center;
+  position: relative;
+`;
+const VideoSectionVideoTitle = styled.h2`
+  position: absolute;
+  top: 45%;
+  margin: 0 auto;
+  font-size: 40px;
+  color: #fff;
+  z-index: 50;
+  word-spacing: 5px;
 `;
 const Video = styled.video`
   border-radius: 15px;
   width: auto;
   height: auto;
   max-height: 100%;
+  filter: brightness(0.5);
   /* position: absolute;
   margin: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
 `;
+
 function Main() {
   return (
     //MAIN START//
@@ -545,6 +557,9 @@ function Main() {
         </VideoSectionTitle>
 
         <VideoSectionVideoBlock>
+          <VideoSectionVideoTitle>
+            Дарите эмоции
+          </VideoSectionVideoTitle>
           <Video src="/skate.mp4" autoPlay loop muted />
         </VideoSectionVideoBlock>
       </VideoSection>
