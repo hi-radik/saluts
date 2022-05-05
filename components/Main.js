@@ -278,7 +278,7 @@ function Main() {
     //MAIN START//
     <Mainerino>
       <MainBlob>
-        <Image src="/intersect.svg" width="560" height="460" />
+        <Image src="/intersect.svg" width="560" height="460" alt='1'/>
       </MainBlob>
       <Wrapper2>
         {/* HOME SECTION START */}
@@ -310,6 +310,7 @@ function Main() {
               alt="main-photo"
               width="400"
               height="570"
+              alt='1'
             />
           </MainPhotoBlock>
         </HomeSection>
@@ -319,7 +320,7 @@ function Main() {
       <CitationSection>
         <Wrapper2>
           <CitationPicBlock>
-            <Image src="/birds-icon.svg" width="128" height="128" />
+            <Image src="/birds-icon.svg" width="128" height="128" alt='1'/>
           </CitationPicBlock>
           <CitationTitle>В большом сердце и далекое близко</CitationTitle>
           <CitationName>М. Горький</CitationName>
@@ -340,7 +341,7 @@ function Main() {
           <ReasonsGridOccasions>
             <ReasonsGridOccasionsItem href="/">
               <ReasonsGridOccasionsItemPicBlock>
-                <Image src="/reasons-cake.svg" width="72" height="72.73" />
+                <Image src="/reasons-cake.svg" width="72" height="72.73" alt='1'/>
               </ReasonsGridOccasionsItemPicBlock>
 
               <ReasonsGridOccasionsItemTitle>
@@ -350,7 +351,7 @@ function Main() {
 
             <ReasonsGridOccasionsItem href="/">
               <ReasonsGridOccasionsItemPicBlock>
-                <Image src="/reasons-wedding.svg" width="72" height="72.73" />
+                <Image src="/reasons-wedding.svg" width="72" height="72.73" alt='1'/>
               </ReasonsGridOccasionsItemPicBlock>
               <ReasonsGridOccasionsItemTitle>
                 Свадьба
@@ -363,6 +364,7 @@ function Main() {
                   src="/reasons-anniversary.svg"
                   width="72"
                   height="72.73"
+                  alt='1'
                 />
               </ReasonsGridOccasionsItemPicBlock>
               <ReasonsGridOccasionsItemTitle>
@@ -372,7 +374,7 @@ function Main() {
 
             <ReasonsGridOccasionsItem href="/">
               <ReasonsGridOccasionsItemPicBlock>
-                <Image src="/reasons-graduate.svg" width="72" height="72.73" />
+                <Image src="/reasons-graduate.svg" width="72" height="72.73" alt='1'/>
               </ReasonsGridOccasionsItemPicBlock>
               <ReasonsGridOccasionsItemTitle>
                 Выпуск
@@ -385,6 +387,7 @@ function Main() {
                   src="/reasons-promotion.svg"
                   width="69.62"
                   height="72.6"
+                  alt='1'
                 />
               </ReasonsGridOccasionsItemPicBlock>
               <ReasonsGridOccasionsItemTitle>
@@ -394,7 +397,7 @@ function Main() {
 
             <ReasonsGridOccasionsItem href="/">
               <ReasonsGridOccasionsItemPicBlock>
-                <Image src="/reasons-table.svg" width="69.62" height="70.87" />
+                <Image src="/reasons-table.svg" width="69.62" height="70.87" alt='1'/>
               </ReasonsGridOccasionsItemPicBlock>
               <ReasonsGridOccasionsItemTitle>
                 Благодарность
@@ -421,11 +424,13 @@ function Main() {
                 alt="1"
                 width="40"
                 height="40"
+                alt='1'
               />
               <HowSectionGridStepsItemPic
                 src="/create.svg"
                 width="100"
                 height="100"
+                alt='1'
               />
               <HowSectionGridStepsItemTitle>
                 Создайте проект
@@ -442,11 +447,13 @@ function Main() {
                 alt="1"
                 width="40"
                 height="40"
+                alt='1'
               />
               <HowSectionGridStepsItemPic
                 src="/invite.svg"
                 width="100"
                 height="100"
+                alt='1'
               />
               <HowSectionGridStepsItemTitle>
                 Пригласите друзей
@@ -463,11 +470,13 @@ function Main() {
                 alt="1"
                 width="40"
                 height="40"
+                alt='1'
               />
               <HowSectionGridStepsItemPic
                 src="/collect.svg"
                 width="100"
                 height="100"
+                alt='1'
               />
               <HowSectionGridStepsItemTitle>
                 Соберите видеоролики
@@ -484,11 +493,13 @@ function Main() {
                 alt="1"
                 width="40"
                 height="40"
+                alt='1'
               />
               <HowSectionGridStepsItemPic
                 src="/edit.svg"
                 width="100"
                 height="100"
+                alt='1'
               />
               <HowSectionGridStepsItemTitle>
                 Составьте поздравление
