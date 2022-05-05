@@ -93,9 +93,11 @@ function Header() {
       <Wrapper>
         <HeaderinoChild>
           <HeaderLogoDiv>
-            <a href="/" style={{ width: "150px" }}>
-              <Image src="/logo.svg" alt="logo" width="150" height="50" />
-            </a>
+            <Link href="/">
+              <a style={{ width: "150px" }}>
+                <Image src="/logo.svg" alt="logo" width="150" height="50" />
+              </a>
+            </Link>
           </HeaderLogoDiv>
 
           <HeaderNav>
