@@ -4,7 +4,7 @@ import Form from "./login-form/Form";
 const Logino = styled.div`
   background-color: #f1f2f4;
   width: 100%;
-  height: 1700px;
+  height: 100vh;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
