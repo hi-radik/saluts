@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
+import { useRouter } from 'next/router';
+
 const Headerino = styled.header`
   display: block;
   position: fixed;
@@ -60,6 +62,7 @@ const Ul = styled.ul`
     display: inline-block;
     background: url("/header__nav-arrow-png.svg") no-repeat right -0.5px;
     padding-right: 22px;
+    cursor: pointer;
   }
   li:last-child {
     line-height: 20px;
@@ -80,7 +83,6 @@ const HeaderBtn = styled.button`
   border-radius: 10px;
   border: none;
   box-shadow: 0px 4px 12px -2px rgba(243, 129, 129, 0.8);
-  cursor: pointer;
   transition: 0.1s all linear;
   &:hover {
     background-color: #f94a47;
@@ -88,6 +90,11 @@ const HeaderBtn = styled.button`
   }
 `;
 function Header() {
+  const router = useRouter()
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push('/start')
+  }
   return (
     <Headerino>
       <Wrapper>
@@ -111,7 +118,7 @@ function Header() {
                 </li>
               </Ul>
             </Nav>
-            <HeaderBtn>Попробовать</HeaderBtn>
+            <HeaderBtn onClick={handleClick}>Попробовать</HeaderBtn>
           </HeaderNav>
         </HeaderinoChild>
       </Wrapper>

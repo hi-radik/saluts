@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 const Mainerino = styled.main`
   max-width: 100%;
   position: relative;
@@ -92,6 +93,8 @@ const MainPhotoBlock = styled.div`
 `;
 
 const MainBlob = styled.div`
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
@@ -286,11 +289,16 @@ const Video = styled.video`
 `;
 
 function Main() {
+  const router = useRouter()
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push('/start')
+  }
   return (
     //MAIN START//
     <Mainerino>
       <MainBlob>
-        <Image src="/intersect.svg" width="560" height="460" alt="1" />
+        <Image src="/intersect.svg" width="560" height="460" alt="..." />
       </MainBlob>
       <Wrapper2>
         {/* HOME SECTION START */}
@@ -309,7 +317,7 @@ function Main() {
             </HomeDescription>
 
             <div>
-              <HomeBtn>Попробовать Saluts</HomeBtn>
+              <HomeBtn onClick={handleClick}>Попробовать Saluts</HomeBtn>
               <HomeBtnHow>
                 <Link href="#how-does-it-work-section">
                   <a>Как это работает</a>
