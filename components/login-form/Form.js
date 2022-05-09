@@ -10,7 +10,7 @@ const LoginForm = styled.form`
   align-items: center;
   width: 550px;
   height: 413px;
-  padding-top: 40px;
+  padding-top: 60px;
   input {
     background-color: #f1f2f4;
     font-family: "Gotham Pro";
