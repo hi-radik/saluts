@@ -5,7 +5,7 @@ const Logino = styled.div`
   background-color: #f1f2f4;
   width: 100%;
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
