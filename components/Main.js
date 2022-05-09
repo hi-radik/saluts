@@ -299,9 +299,12 @@ function Main() {
 
     //MAIN START//
     <Mainerino>
-      <MainBlob>
-        <Image src={intersect} width="553" height="460" alt="..." />
-      </MainBlob>
+      <div style={{ width: "1280px", position: "relative", margin: "0 auto" }}>
+        <MainBlob>
+          <Image src={intersect} width="553" height="460" alt="..." />
+        </MainBlob>
+      </div>
+
       <Wrapper2>
         {/* HOME SECTION START */}
         <HomeSection>
