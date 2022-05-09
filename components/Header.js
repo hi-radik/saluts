@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 const Headerino = styled.header`
   display: block;
@@ -90,11 +90,11 @@ const HeaderBtn = styled.button`
   }
 `;
 function Header() {
-  const router = useRouter()
+  const router = useRouter();
   const handleClick = (e) => {
-    e.preventDefault()
-    router.push('/start')
-  }
+    e.preventDefault();
+    router.push("/start");
+  };
 
   return (
     <Headerino>
@@ -113,7 +113,7 @@ function Header() {
               <Ul>
                 <li style={{ marginRight: "30px" }}>События</li>
                 <li>
-                  <Link href='/login'>
+                  <Link href="/login">
                     <a>Войти</a>
                   </Link>
                 </li>
