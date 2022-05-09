@@ -9,6 +9,7 @@ export default function Home() {
         <title>
           Saluts: Групповые видеопоздравления в честь важных событий
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
 
       <Header />
