@@ -2,6 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import intersect from '../public/Intersect1.svg'
 const Mainerino = styled.main`
   max-width: 100%;
   position: relative;
@@ -296,7 +297,7 @@ function Main() {
     //MAIN START//
     <Mainerino>
       <MainBlob>
-        <Image src="/intersect1.svg" width="553" height="460" alt="..." />
+        <Image src={intersect} width="553" height="460" alt="..." />
       </MainBlob>
       <Wrapper2>
         {/* HOME SECTION START */}
