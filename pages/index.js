@@ -5,7 +5,12 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <title>
+          Saluts: Групповые видеопоздравления в честь важных событий
+        </title>
+      </Head>
+
       <Header />
       <Main />
       <Footer />

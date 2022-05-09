@@ -95,14 +95,15 @@ function Header() {
     e.preventDefault()
     router.push('/start')
   }
+
   return (
     <Headerino>
       <Wrapper>
         <HeaderinoChild>
           <HeaderLogoDiv>
             <Link href="/">
-              <a style={{ width: "150px" }}>
-                <Image src="/logo.svg" alt="logo" width="150" height="50" />
+              <a style={{ width: "135px" }}>
+                <Image src="/logo.svg" alt="logo" width="135" height="50" />
               </a>
             </Link>
           </HeaderLogoDiv>
@@ -112,7 +113,7 @@ function Header() {
               <Ul>
                 <li style={{ marginRight: "30px" }}>События</li>
                 <li>
-                  <Link href="/">
+                  <Link href='/login'>
                     <a>Войти</a>
                   </Link>
                 </li>

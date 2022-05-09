@@ -44,8 +44,8 @@ function Footer() {
     <Footerino>
       <Wrapper2>
         <Link href="/">
-          <a style={{ width: "150px" }}>
-            <Image src="/logo.svg" alt="logo" width="150" height="50" />
+          <a style={{ width: "135px" }}>
+            <Image src="/logo.svg" alt="logo" width="135" height="50" />
           </a>
         </Link>
         <FooterList>

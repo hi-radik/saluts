@@ -5,7 +5,7 @@ function StartProject() {
     <>
       <Head>
         <title>
-          Login – Saluts.team
+          Saluts: Создать замечатльное видеопоздравление
         </title>
       </Head>
       <Start />

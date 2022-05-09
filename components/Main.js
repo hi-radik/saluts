@@ -1,8 +1,9 @@
 import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
-import { useRouter } from 'next/router';
-import intersect from '../public/Intersect1.svg'
+import { useRouter } from "next/router";
+import intersect from "../public/Intersect1.svg";
+import Script from "next/script";
 const Mainerino = styled.main`
   max-width: 100%;
   position: relative;
@@ -288,12 +289,14 @@ const Video = styled.video`
 `;
 
 function Main() {
-  const router = useRouter()
+  const router = useRouter();
   const handleClick = (e) => {
-    e.preventDefault()
-    router.push('/start')
-  }
+    e.preventDefault();
+    router.push("/start");
+  };
   return (
+    //Плавное появление
+
     //MAIN START//
     <Mainerino>
       <MainBlob>
@@ -564,9 +567,7 @@ function Main() {
         </VideoSectionTitle>
 
         <VideoSectionVideoBlock>
-          <VideoSectionVideoTitle>
-            Дарите эмоции
-          </VideoSectionVideoTitle>
+          <VideoSectionVideoTitle>Дарите эмоции</VideoSectionVideoTitle>
           <Video src="/skate.mp4" autoPlay loop muted />
         </VideoSectionVideoBlock>
       </VideoSection>
