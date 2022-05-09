@@ -93,8 +93,6 @@ const MainPhotoBlock = styled.div`
 `;
 
 const MainBlob = styled.div`
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
@@ -298,7 +296,7 @@ function Main() {
     //MAIN START//
     <Mainerino>
       <MainBlob>
-        <Image src="/intersect.svg" width="560" height="460" alt="..." />
+        <Image src="/intersect1.svg" width="553" height="460" alt="..." />
       </MainBlob>
       <Wrapper2>
         {/* HOME SECTION START */}
