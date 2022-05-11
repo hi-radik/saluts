@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
-const LoginForm = styled.form`
+const RegisterForm = styled.form`
   background: #ffffff;
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -9,7 +9,7 @@ const LoginForm = styled.form`
   //justify-content: center;
   align-items: center;
   width: 550px;
-  height: 413px;
+  height: 450px;
   padding-top: 60px;
   input {
     background-color: #f1f2f4;
@@ -20,7 +20,7 @@ const LoginForm = styled.form`
     height: 50px;
     border: none;
     //border: 1px solid #E3E5E9;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border-radius: 5px;
     transition: all 0.1s linear;
     padding: 14px;
@@ -31,6 +31,7 @@ const LoginForm = styled.form`
     }
   }
   button {
+    margin-top: 5px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     letter-spacing: 0.7px;
@@ -63,10 +64,10 @@ const LoginForm = styled.form`
   }
 `;
 
-function Form({ title }) {
+function RegForm({ title }) {
   return (
     <>
-      <LoginForm method="post">
+      <RegisterForm method="post">
         <h2
           style={{
             marginBottom: "30px",
@@ -78,17 +79,60 @@ function Form({ title }) {
         >
           {title}
         </h2>
-        <input type="text" name="login" placeholder="Электронная почта" />
-        <label htmlFor="login"></label>
-        <input type="password" name="password" placeholder="Пароль" />
-        <label htmlFor="password"></label>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "400px",
+          }}
+        >
+          <input
+            type="text"
+            name="firstName"
+            placeholder="Имя"
+            style={{ width: "195px", height: "45px" }}
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Фамилия"
+            style={{ width: "195px", height: "45px" }}
+          />
+        </div>
+
+        <input type="text" name="email" placeholder="Электронная почта" />
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "400px",
+          }}
+        >
+          <input
+            type="password"
+            name="password"
+            placeholder="Пароль"
+            style={{ width: "195px", height: "45px" }}
+          />
+          <input
+            type="password"
+            name="repeatPassword"
+            placeholder="Повторите пароль"
+            style={{ width: "195px", height: "45px" }}
+          />
+        </div>
+
         <button type="submit">Продолжить</button>
         <p>
-          Еще нет аккаунта? <Link href='/reg'><a>Зарегистрируйтесь</a></Link>
+          Уже есть аккаунт?{" "}
+          <Link href="/login">
+            <a>Войдите</a>
+          </Link>
         </p>
-      </LoginForm>
+      </RegisterForm>
     </>
   );
 }
 
-export default Form;
+export default RegForm;
