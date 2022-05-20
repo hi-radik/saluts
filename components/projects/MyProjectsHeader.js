@@ -83,7 +83,7 @@ const HeaderBtn = styled.button`
   }
 `;
 
-function MyProjectsHeader() {
+function MyProjectsHeader({profilePic}) {
   const router = useRouter();
   const handleClick = (e) => {
     e.preventDefault();
@@ -112,7 +112,7 @@ function MyProjectsHeader() {
                     className="dropdown"
                   >
                     <Image
-                      src="/profile-pic.jpg"
+                      src={profilePic}
                       width="38"
                       height="38"
                       unoptimized="true"
@@ -120,11 +120,11 @@ function MyProjectsHeader() {
                       style={{ borderRadius: "5px" }}
                     />
                     <div className="dropdown-content">
-                      <Link href="#">
+                      <Link href="/profile">
                         <a>Профиль</a>
                       </Link>
                       <hr />
-                      <Link href="#">
+                      <Link href="/projects">
                         <a style={{ marginTop: "20px" }}>Проекты</a>
                       </Link>
                       <hr />
