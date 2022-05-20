@@ -66,7 +66,7 @@ const LoginForm = styled.form`
 function Form({ title }) {
   return (
     <>
-      <LoginForm method="post">
+      <LoginForm method="post" action="http://localhost:3000/api">
         <h2
           style={{
             marginBottom: "30px",

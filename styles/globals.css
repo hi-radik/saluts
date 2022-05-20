@@ -46,11 +46,71 @@ video {
   margin: 0;
   padding: 0;
 }
-
-
+hr {
+  padding: 0;
+  margin: 0;
+}
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+}
+
+.dropdown-content {
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: -42px;
+  top: 64px;
+  background-color: #fbfbfb;
+  width: 124px;
+  height: 146px;
+  z-index: 1;
+  border-radius: 0 0 10px 10px;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0 15px 20px rgb(112 119 138 / 10%);
+}
+.dropdown-content > hr {
+  width: 100%;
+  border: none;
+  background-color: #d7d7d7;
+  height: 0.5px;
+}
+.dropdown-content > a {
+  font-weight: 300;
+  font-size: 14px;
+  color: #1b1a1a;
+  margin-bottom: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+}
+
+.hover-edit-pic {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s linear;
+}
+
+.edit {
+  transition: all 0.1s linear;
+}
+.edit:hover .hover-edit-pic {
+  opacity: 1;
+
+} 
