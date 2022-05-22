@@ -83,7 +83,7 @@ const HeaderBtn = styled.button`
   }
 `;
 
-function MyProjectsHeader({profilePic}) {
+function MyProjectsHeader({ profilePic }) {
   const router = useRouter();
   const handleClick = (e) => {
     e.preventDefault();

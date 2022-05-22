@@ -54,7 +54,6 @@ const ProjectsProjectsGirdSectionItem = styled.div`
 
 function MyProjectsMain() {
   return (
-    <>
       <ProjectsMain>
         <Wrapper>
           <ProjectsProjectsSection>
@@ -97,7 +96,6 @@ function MyProjectsMain() {
           </ProjectsProjectsSection>
         </Wrapper>
       </ProjectsMain>
-    </>
   );
 }
 
