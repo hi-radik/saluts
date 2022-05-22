@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import ProjectsItem from "../projects/ProjectsItem";
 
-
 const MyProfileMain = styled.main`
   background-color: #f0f1f3;
   width: 100%;
@@ -53,10 +52,7 @@ function ProfileMain() {
       <MyProfileMain>
         <Wrapper>
           <ProfileSection>
-            <ProfileTitle>
-              Профиль
-            </ProfileTitle>
-            
+            <ProfileTitle>Профиль</ProfileTitle>
           </ProfileSection>
         </Wrapper>
       </MyProfileMain>

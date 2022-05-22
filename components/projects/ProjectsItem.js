@@ -12,11 +12,11 @@ const ProjectsProjectsGirdSectionItem = styled.div`
   align-items: center;
   transition: all 0.1s linear;
 
-  &:hover .some .some2{
+  &:hover .some .some2 {
     cursor: pointer;
     filter: brightness(0.7);
   }
-  &:hover .some .hover-edit-pic{
+  &:hover .some .hover-edit-pic {
     cursor: pointer;
     filter: brightness(1);
   }
@@ -36,7 +36,7 @@ function ProjectsItem({ projectImage, projectTitle }) {
       <ProjectsProjectsGirdSectionItem className="edit">
         <Link href="#">
           <a>
-            <div style={{ position: "relative" }} className='some'>
+            <div style={{ position: "relative" }} className="some">
               <Image
                 src={projectImage}
                 width={256}
@@ -45,7 +45,7 @@ function ProjectsItem({ projectImage, projectTitle }) {
                   boxShadow: "8px 0px 20px rgba(0, 0, 0, 0.1)",
                   borderRadius: "10px",
                 }}
-                className='some2'
+                className="some2"
               />
               <div className="hover-edit-pic">
                 <Image src="/editedit_project.svg" width={93} height={93} />

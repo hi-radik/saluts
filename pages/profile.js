@@ -11,8 +11,8 @@ function MyProfile() {
           content="width=device-width, initial-scale=1"
         ></meta>
       </Head>
-      <MyProjectsHeader profilePic={'/profile-pic.jpg'}/>
-      <ProfileMain/>
+      <MyProjectsHeader profilePic={"/profile-pic.jpg"} />
+      <ProfileMain />
     </>
   );
 }
