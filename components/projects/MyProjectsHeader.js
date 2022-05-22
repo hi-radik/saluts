@@ -128,7 +128,7 @@ function MyProjectsHeader({profilePic}) {
                         <a style={{ marginTop: "20px" }}>Проекты</a>
                       </Link>
                       <hr />
-                      <Link href="#">
+                      <Link href="login">
                         <a style={{ marginTop: "20px" }}>Выход</a>
                       </Link>
                     </div>
