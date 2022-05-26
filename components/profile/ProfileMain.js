@@ -2,12 +2,13 @@ import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import ProjectsItem from "../projects/ProjectsItem";
+import ProfilePhoto from "../profile/ProfilePhoto";
+import ProfileForm from "./ProfileForm";
 
 const MyProfileMain = styled.main`
   background-color: #f0f1f3;
   width: 100%;
-  min-height: 1100px;
+  min-height: 1500px;
 `;
 const Wrapper = styled.div`
   max-width: 1200px;
@@ -26,24 +27,14 @@ const ProfileTitle = styled.h2`
   margin-bottom: 80px;
 `;
 
-const ProjectsProjectsGirdSectionItem = styled.div`
-  grid-column: span 1;
-  display: flex;
-  height: 300px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.1s linear;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.93;
-  }
-  p {
-    font-size: 24px;
-    font-family: "Gotham Pro";
-    font-weight: 300;
-    text-align: center;
-  }
+const ProfilePersonalBlock = styled.div`
+  width: 650px;
+  height: 716px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 63px 150px;
+  margin: 0 auto;
 `;
 
 function ProfileMain() {
@@ -53,6 +44,10 @@ function ProfileMain() {
         <Wrapper>
           <ProfileSection>
             <ProfileTitle>Профиль</ProfileTitle>
+            <ProfilePhoto profileImage={"/profile-pic.jpg"} />
+            <ProfilePersonalBlock>
+              <ProfileForm/>
+            </ProfilePersonalBlock>
           </ProfileSection>
         </Wrapper>
       </MyProfileMain>
