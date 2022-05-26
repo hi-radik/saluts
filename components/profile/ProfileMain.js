@@ -4,11 +4,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import ProfilePhoto from "../profile/ProfilePhoto";
 import ProfileForm from "./ProfileForm";
+import ProfileSubmitButton from "./ProfileSubmitButton";
 
 const MyProfileMain = styled.main`
   background-color: #f0f1f3;
   width: 100%;
-  min-height: 1500px;
+  min-height: 1650px;
 `;
 const Wrapper = styled.div`
   max-width: 1200px;
@@ -35,6 +36,7 @@ const ProfilePersonalBlock = styled.div`
   border-radius: 15px;
   padding: 63px 150px;
   margin: 0 auto;
+  margin-bottom: 80px;
 `;
 
 function ProfileMain() {
@@ -46,8 +48,10 @@ function ProfileMain() {
             <ProfileTitle>Профиль</ProfileTitle>
             <ProfilePhoto profileImage={"/profile-pic.jpg"} />
             <ProfilePersonalBlock>
-              <ProfileForm/>
+              <ProfileForm />
+              
             </ProfilePersonalBlock>
+            <ProfileSubmitButton />
           </ProfileSection>
         </Wrapper>
       </MyProfileMain>
