@@ -163,37 +163,37 @@ function Start() {
         <StartinoItems>
           <div className="form_radio_btn">
             <input id="radio-1" type="radio" name="radio" value="1" />
-            <label for="radio-1">День рождения</label>
+            <label htmlFor="radio-1">День рождения</label>
           </div>
 
           <div className="form_radio_btn">
             <input id="radio-2" type="radio" name="radio" value="2" />
-            <label for="radio-2">Свадьба</label>
+            <label htmlFor="radio-2">Свадьба</label>
           </div>
 
           <div className="form_radio_btn">
             <input id="radio-3" type="radio" name="radio" value="3" />
-            <label for="radio-3">Годовщина</label>
+            <label htmlFor="radio-3">Годовщина</label>
           </div>
 
           <div className="form_radio_btn">
             <input id="radio-4" type="radio" name="radio" value="4" />
-            <label for="radio-4">Выпуск</label>
+            <label htmlFor="radio-4">Выпуск</label>
           </div>
 
           <div className="form_radio_btn">
             <input id="radio-5" type="radio" name="radio" value="5" />
-            <label for="radio-5">Выздоровление</label>
+            <label htmlFor="radio-5">Выздоровление</label>
           </div>
 
           <div className="form_radio_btn">
             <input id="radio-6" type="radio" name="radio" value="6" />
-            <label for="radio-6">Благодарность</label>
+            <label htmlFor="radio-6">Благодарность</label>
           </div>
 
           <div className="form_radio_btn">
             <input id="radio-7" type="radio" name="radio" value="7" />
-            <label for="radio-7">Карьерный рост</label>
+            <label htmlFor="radio-7">Карьерный рост</label>
           </div>
         </StartinoItems>
         <p>Больше поводов</p>
