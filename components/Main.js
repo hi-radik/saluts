@@ -42,7 +42,6 @@ const HomeTitle = styled.h1`
   word-spacing: 5px;
   letter-spacing: 0.7px;
   font-weight: 500;
-  
 `;
 const HomeTitleFirstLetter = styled.span`
   color: rgba(252, 89, 87, 0.95);
@@ -53,11 +52,13 @@ const HomeDescription = styled.p`
   color: #646870;
   font-weight: 300;
   font-size: 20px;
-  line-height: 150%;
+  font-size: 20px;
+  line-height: 140%; 
   display: inline-block;
   margin-bottom: 45px;
   word-spacing: 5px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.1px;
+  width: 570px;
 `;
 const HomeBtn = styled.button`
   width: 285px;
@@ -140,7 +141,7 @@ const ReasonsSection = styled.section`
 `;
 const ReasonsTitle = styled.h2`
   font-size: 40px;
-  color: #292D34;
+  color: #292d34;
   margin-bottom: 40px;
   text-align: center;
   font-weight: 500;

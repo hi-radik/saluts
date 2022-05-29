@@ -65,7 +65,7 @@ const StartinoFirstStep = styled.div`
 `;
 const StartinoSecondStep = styled.div`
   width: 775px;
-  height: 500px;
+  height: 450px;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.05);
@@ -84,19 +84,27 @@ const StartinoSecondStep = styled.div`
     margin-top: 9px;
     margin-left: 15px;
   }
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 17px;
+    margin: 0 auto;
+    color: rgba(88, 94, 108, 0.77);
+    margin-bottom: 20px;
+  }
 `;
 const Step2Div = styled.div`
   display: flex;
   align-items: flex-start;
   width: 300px;
   margin-bottom: 40px;
-
 `;
 const StartinoItems = styled.div`
   width: 506px;
   display: flex;
   flex-wrap: wrap;
   padding-left: 55px;
+  margin-bottom: 58px;
 `;
 function Start() {
   const [forWho, setForWho] = useState("");
@@ -188,8 +196,10 @@ function Start() {
             <label for="radio-7">Карьерный рост</label>
           </div>
         </StartinoItems>
+        <p>Больше поводов</p>
+        <div style={{margin:'0 auto'}}><Image src="/down-arrow.svg" width="15" height="7.5" /></div>
       </StartinoSecondStep>
-      <ProfileSubmitBtn title='Продолжить'/>
+      <ProfileSubmitBtn title="Продолжить" />
     </Startino>
   );
 }

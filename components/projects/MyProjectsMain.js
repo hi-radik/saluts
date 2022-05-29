@@ -62,7 +62,7 @@ function MyProjectsMain() {
             </ProjectsProjectsSectionTitle>
             <ProjectsProjectsGridSection>
               <ProjectsProjectsGirdSectionItem>
-                <Link href="/index">
+                <Link href="/start">
                   <a>
                     <Image
                       src="/projects-create-new.svg"
