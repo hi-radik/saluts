@@ -8,6 +8,9 @@ const ProfilePhotoSection = styled.div`
   height: 256px;
   margin: 0 auto;
   margin-bottom: 80px;
+  background-color: #f1f2f4;
+  box-shadow: 8px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   &:hover .some .some2 {
     cursor: pointer;
     filter: brightness(0.7);
@@ -24,13 +27,15 @@ function ProfilePhoto({ profileImage }) {
       <ProfilePhotoSection className="edit">
         <Link href="#">
           <a>
-            <div style={{ position: "relative" }} className="some">
+            <div
+              style={{ position: "relative", borderRadius: "10px" }}
+              className="some"
+            >
               <Image
                 src={profileImage}
                 width={256}
                 height={256}
                 style={{
-                  boxShadow: "8px 0px 20px rgba(0, 0, 0, 0.1)",
                   borderRadius: "10px",
                 }}
                 className="some2"

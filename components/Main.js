@@ -29,7 +29,7 @@ const HomeLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 530px;
+  max-width: 550px;
   height: 100%;
   padding-top: 75px;
 `;
@@ -40,7 +40,9 @@ const HomeTitle = styled.h1`
   margin-bottom: 35px;
   margin-top: 0px;
   word-spacing: 5px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  
 `;
 const HomeTitleFirstLetter = styled.span`
   color: rgba(252, 89, 87, 0.95);
@@ -62,6 +64,7 @@ const HomeBtn = styled.button`
   height: 70px;
   color: #ffffff;
   font-size: 20px;
+  font-weight: 700;
   background-color: #fc5957;
   border-radius: 10px;
   border: none;
@@ -84,6 +87,10 @@ const HomeBtnHow = styled.span`
   line-height: 30px;
   &:hover {
     cursor: pointer;
+  }
+  a {
+    font-weight: 300;
+    font-size: 17px;
   }
 `;
 const MainPhotoBlock = styled.div`
@@ -115,6 +122,7 @@ const CitationTitle = styled.h2`
   font-size: 40px;
   text-align: center;
   margin-bottom: 30px;
+  font-weight: 500;
 `;
 const CitationName = styled.p`
   color: #292d34;
@@ -132,9 +140,10 @@ const ReasonsSection = styled.section`
 `;
 const ReasonsTitle = styled.h2`
   font-size: 40px;
-  color: #000000;
+  color: #292D34;
   margin-bottom: 40px;
   text-align: center;
+  font-weight: 500;
 `;
 const ReasonsDescription = styled.p`
   font-size: 26px;
@@ -196,6 +205,7 @@ const HowSectionTitle = styled.h2`
   font-size: 40px;
   text-align: center;
   margin-bottom: 44px;
+  font-weight: 500;
 `;
 const HowSectionDescription = styled.p`
   font-size: 26px;
@@ -238,6 +248,7 @@ const HowSectionGridStepsItemTitle = styled.p`
   color: #292d34;
   text-align: center;
   margin-bottom: 19px;
+  font-weight: 500;
 `;
 const HowSectionGridStepsItemDescription = styled.p`
   font-size: 14px;
@@ -258,6 +269,7 @@ const VideoSectionTitle = styled.h2`
   text-align: center;
   margin-top: 0;
   margin-bottom: 93px;
+  font-weight: 500;
 `;
 const VideoSectionVideoBlock = styled.div`
   width: 100%;
@@ -274,6 +286,7 @@ const VideoSectionVideoTitle = styled.h2`
   color: #fff;
   z-index: 50;
   word-spacing: 5px;
+  font-weight: 500;
 `;
 const Video = styled.video`
   border-radius: 15px;

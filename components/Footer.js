@@ -31,6 +31,7 @@ const FooterListItem = styled.li`
   font-size: 16px;
   color: #292d34;
   line-height: 2;
+  font-weight: 300;
 `;
 const FooterAllRights = styled.p`
   color: #858a92;
@@ -38,6 +39,7 @@ const FooterAllRights = styled.p`
   position: absolute;
   bottom: 0;
   left: 0;
+  font-weight: 300;
 `;
 function Footer() {
   return (

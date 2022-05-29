@@ -51,7 +51,7 @@ function ProfileMain() {
               <ProfileForm />
               
             </ProfilePersonalBlock>
-            <ProfileSubmitButton />
+            <ProfileSubmitButton title="Сохранить"/>
           </ProfileSection>
         </Wrapper>
       </MyProfileMain>

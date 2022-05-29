@@ -1,4 +1,4 @@
-import Start from "../components/Start";
+import Start from "../components/start/Start";
 import Head from "next/head";
 function StartProject() {
   return (

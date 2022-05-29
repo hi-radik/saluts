@@ -6,7 +6,7 @@ const SubmitButton = styled.button`
   font-family: "Gotham Pro";
   font-style: normal;
   letter-spacing: 0.5px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 19px;
   line-height: 20px;
   padding-top: 3.5px;
@@ -22,8 +22,8 @@ const SubmitButton = styled.button`
   }
   margin: 0 37.5%;
 `;
-function ProfileSubmitButton() {
-  return <SubmitButton type="submit">Сохранить</SubmitButton>;
+function ProfileSubmitButton( {title}) {
+  return <SubmitButton type="submit" title='Сохранить'>{title}</SubmitButton>;
 }
 
 export default ProfileSubmitButton;

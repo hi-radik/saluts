@@ -70,7 +70,7 @@ const HeaderBtn = styled.button`
   height: 46px;
   color: #ffffff;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "Gotham Pro";
   border-radius: 10px;
   border: none;
