@@ -39,7 +39,7 @@ const HomeTitle = styled.h1`
   line-height: 1.12;
   margin-bottom: 35px;
   margin-top: 0px;
-  word-spacing: 5px;
+  word-spacing: 2px;
   letter-spacing: 0.7px;
   font-weight: 500;
 `;
