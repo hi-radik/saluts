@@ -13,7 +13,6 @@ const LoginForm = styled.form`
   padding-top: 60px;
   input {
     background-color: #f1f2f4;
-    font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 300;
     width: 400px;
@@ -31,7 +30,6 @@ const LoginForm = styled.form`
     }
   }
   button {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     letter-spacing: 0.7px;
     font-size: 16px;
@@ -50,11 +48,9 @@ const LoginForm = styled.form`
     }
   }
   p {
-    font-family: "Roboto", sans-serif;
     color: #858a92;
     font-size: 14px;
     a {
-      font-family: "Roboto", sans-serif;
       color: #fc6967;
       font-size: 14px;
       text-decoration: underline;

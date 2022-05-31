@@ -47,10 +47,10 @@ const Ul = styled.ul`
   align-items: center;
   flex-wrap: wrap;
 
-  font-family: "Gotham Pro";
   font-size: 16px;
   font-weight: 300;
   line-height: 15px;
+  font-family: 'Gotham Pro';
 
   color: #1b1a1a;
   a {
@@ -62,6 +62,7 @@ const Ul = styled.ul`
   li {
     display: inline-block;
     cursor: pointer;
+    font-family: 'Gotham Pro';
   }
 `;
 const HeaderBtn = styled.button`
@@ -70,8 +71,8 @@ const HeaderBtn = styled.button`
   height: 46px;
   color: #ffffff;
   font-size: 15px;
+  font-family: 'Gotham Pro';
   font-weight: 500;
-  font-family: "Gotham Pro";
   border-radius: 10px;
   border: none;
   box-shadow: 0px 4px 12px -2px rgba(243, 129, 129, 0.8);

@@ -13,7 +13,6 @@ const RegisterForm = styled.form`
   padding-top: 60px;
   input {
     background-color: #f1f2f4;
-    font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 300;
     width: 400px;
@@ -32,7 +31,6 @@ const RegisterForm = styled.form`
   }
   button {
     margin-top: 5px;
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     letter-spacing: 0.7px;
     font-size: 16px;
@@ -51,11 +49,9 @@ const RegisterForm = styled.form`
     }
   }
   p {
-    font-family: "Roboto", sans-serif;
     color: #858a92;
     font-size: 14px;
     a {
-      font-family: "Roboto", sans-serif;
       color: #fc6967;
       font-size: 14px;
       text-decoration: underline;

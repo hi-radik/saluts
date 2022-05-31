@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import ProfileSubmitButton from "../profile/ProfileSubmitButton";
 import ProfileDisableButton from "../profile/ProfileDisableButton";
+import OccasionInput from "./OccasionInput";
+
 const Startino = styled.div`
   background-color: #f1f2f4;
   width: 100%;
@@ -65,8 +67,9 @@ const StartinoFirstStep = styled.div`
   }
 `;
 const StartinoSecondStep = styled.div`
+  position: relative;
   width: 775px;
-  height: 450px;
+  height: 350px;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.05);
@@ -76,6 +79,7 @@ const StartinoSecondStep = styled.div`
   padding: 48px 50px;
   align-items: flex-start;
   flex-direction: column;
+  transition: all 0.2s ease-in-out;
 
   h2 {
     font-weight: 300;
@@ -105,11 +109,22 @@ const StartinoItems = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding-left: 55px;
-  margin-bottom: 58px;
+  /* margin-bottom: 58px; */
 `;
+
 function Start() {
   const [forWho, setForWho] = useState("");
   const [occasionType, setOccasionType] = useState("");
+  const [customOccasion, setCustomOccasion] = useState("");
+
+  const inputAppear = () => {
+    const second = document.getElementById("StartinoSecondStep");
+    second.style.height = "435px";
+  };
+  const inputDisappear = () => {
+    const second = document.getElementById("StartinoSecondStep");
+    second.style.height = "350px";
+  };
   return (
     <Startino>
       <div
@@ -155,9 +170,9 @@ function Start() {
         </div>
       </StartinoFirstStep>
 
-      <StartinoSecondStep>
+      <StartinoSecondStep id="StartinoSecondStep">
         <Step2Div>
-          {occasionType ? (
+          { (occasionType == 'Другое' && customOccasion.length >=1) || (occasionType != 'Другое') ? (
             <Image
               src="/circle-step-done.svg"
               alt="step1"
@@ -179,6 +194,7 @@ function Start() {
               name="radio"
               value="День рождения"
               onChange={(e) => setOccasionType(e.target.value)}
+              onClick={inputDisappear}
             />
             <label htmlFor="radio-1">День рождения</label>
           </div>
@@ -190,6 +206,7 @@ function Start() {
               name="radio"
               value="Свадьба"
               onChange={(e) => setOccasionType(e.target.value)}
+              onClick={inputDisappear}
             />
             <label htmlFor="radio-2">Свадьба</label>
           </div>
@@ -201,6 +218,7 @@ function Start() {
               name="radio"
               value="Годовщина"
               onChange={(e) => setOccasionType(e.target.value)}
+              onClick={inputDisappear}
             />
             <label htmlFor="radio-3">Годовщина</label>
           </div>
@@ -212,6 +230,7 @@ function Start() {
               name="radio"
               value="Выпуск"
               onChange={(e) => setOccasionType(e.target.value)}
+              onClick={inputDisappear}
             />
             <label htmlFor="radio-4">Выпуск</label>
           </div>
@@ -223,6 +242,7 @@ function Start() {
               name="radio"
               value="Выздоровление"
               onChange={(e) => setOccasionType(e.target.value)}
+              onClick={inputDisappear}
             />
             <label htmlFor="radio-5">Выздоровление</label>
           </div>
@@ -234,6 +254,7 @@ function Start() {
               name="radio"
               value="Благодарность"
               onChange={(e) => setOccasionType(e.target.value)}
+              onClick={inputDisappear}
             />
             <label htmlFor="radio-6">Благодарность</label>
           </div>
@@ -245,17 +266,35 @@ function Start() {
               name="radio"
               value="Карьерный рост"
               onChange={(e) => setOccasionType(e.target.value)}
+              onClick={inputDisappear}
             />
             <label htmlFor="radio-7">Карьерный рост</label>
           </div>
+
+          <div className="form_radio_btn">
+            <input
+              id="radio-8"
+              type="radio"
+              name="radio"
+              value="Другое"
+              onChange={(e) => setOccasionType(e.target.value)}
+              onClick={inputAppear}
+            />
+            <label htmlFor="radio-8">Другое</label>
+          </div>
         </StartinoItems>
-        <p>Больше поводов</p>
+        {occasionType == "Другое" ? <OccasionInput customOccasion={customOccasion} setCustomOccasion={setCustomOccasion}/> : console.log("")}
+
+        {/* <p>Больше поводов</p>
         <div style={{ margin: "0 auto" }}>
           <Image src="/down-arrow.svg" width="15" height="7.5" />
-        </div>
+        </div> */}
       </StartinoSecondStep>
-      { forWho.length >= 2 && occasionType ? <ProfileSubmitButton title="Продолжить" /> : <ProfileDisableButton title='Продолжить'/>}
-      
+      { (forWho.length >= 2 && occasionType != 'Другое') || (forWho.length >= 2 && occasionType == 'Другое' && customOccasion.length >= 1) ? (
+        <ProfileSubmitButton title="Продолжить" />
+      ) : (
+        <ProfileDisableButton title="Продолжить" />
+      )}
     </Startino>
   );
 }

@@ -46,8 +46,8 @@ const Ul = styled.ul`
   align-items: center;
   flex-wrap: wrap;
   margin-right: 35px;
-  font-family: "Gotham Pro";
   font-size: 16px;
+  font-family: 'Gotham Pro';
   font-weight: 300;
   line-height: 15px;
 
@@ -62,6 +62,8 @@ const Ul = styled.ul`
     display: inline-block;
     background: url("/header__nav-arrow-png.svg") no-repeat right -0.5px;
     padding-right: 22px;
+    font-weight: 300;
+    font-family: 'Gotham Pro';
     cursor: pointer;
   }
   li:last-child {
@@ -78,8 +80,8 @@ const HeaderBtn = styled.button`
   height: 46px;
   color: #ffffff;
   font-size: 15px;
+  font-family: 'Gotham Pro';
   font-weight: 500;
-  font-family: "Gotham Pro";
   border-radius: 10px;
   border: none;
   box-shadow: 0px 4px 12px -2px rgba(243, 129, 129, 0.8);
