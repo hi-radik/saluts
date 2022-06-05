@@ -54,6 +54,7 @@ const Ul = styled.ul`
   color: #1b1a1a;
   a {
     transition: 0.1s all linear;
+    font-family: 'Gotham Pro';
   }
   a:hover {
     color: #fc5957;

@@ -172,7 +172,7 @@ function Start() {
 
       <StartinoSecondStep id="StartinoSecondStep">
         <Step2Div>
-          { (occasionType == 'Другое' && customOccasion.length >=1) || (occasionType != 'Другое') ? (
+          { (occasionType == 'Другое' && customOccasion.length >=1) || (occasionType != 'Другое' && occasionType) ? (
             <Image
               src="/circle-step-done.svg"
               alt="step1"
@@ -290,7 +290,7 @@ function Start() {
           <Image src="/down-arrow.svg" width="15" height="7.5" />
         </div> */}
       </StartinoSecondStep>
-      { (forWho.length >= 2 && occasionType != 'Другое') || (forWho.length >= 2 && occasionType == 'Другое' && customOccasion.length >= 1) ? (
+      { (forWho.length >= 2 && occasionType != 'Другое' && occasionType) || (forWho.length >= 2 && occasionType == 'Другое' && customOccasion.length >= 1) ? (
         <ProfileSubmitButton title="Продолжить" />
       ) : (
         <ProfileDisableButton title="Продолжить" />
