@@ -47,14 +47,14 @@ const Ul = styled.ul`
   flex-wrap: wrap;
   margin-right: 35px;
   font-size: 16px;
-  font-family: 'Gotham Pro';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   line-height: 15px;
 
   color: #1b1a1a;
   a {
     transition: 0.1s all linear;
-    font-family: 'Gotham Pro';
+    font-family: 'Montserrat', sans-serif;
   }
   a:hover {
     color: #fc5957;
@@ -64,7 +64,7 @@ const Ul = styled.ul`
     background: url("/header__nav-arrow-png.svg") no-repeat right -0.5px;
     padding-right: 22px;
     font-weight: 300;
-    font-family: 'Gotham Pro';
+    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
   }
   li:last-child {
@@ -81,7 +81,7 @@ const HeaderBtn = styled.button`
   height: 46px;
   color: #ffffff;
   font-size: 15px;
-  font-family: 'Gotham Pro';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   border-radius: 10px;
   border: none;

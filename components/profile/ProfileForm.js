@@ -20,7 +20,7 @@ const ProfileFormino = styled.form`
   span {
     margin: 0 auto;
     margin-bottom: 15px;
-    font-family: "Gotham Pro";
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -29,7 +29,7 @@ const ProfileFormino = styled.form`
     color: #292d34;
   }
   label {
-    font-family: "Gotham Pro";
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -44,7 +44,7 @@ const ProfileFormino = styled.form`
     width: 350px;
     height: 48px;
     border: none;
-    font-family: "Gotham Pro";
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;

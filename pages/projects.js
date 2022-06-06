@@ -5,6 +5,7 @@ function MyProjects() {
   return (
     <>
       <Head>
+        
         <title>Saluts: Мои проекты</title>
         <meta
           name="viewport"

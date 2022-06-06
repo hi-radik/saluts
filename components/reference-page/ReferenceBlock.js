@@ -18,7 +18,7 @@ const MyReferenceBlock = styled.div`
  
   
   h2 {
-    font-family: "Gotham Pro";
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -27,7 +27,7 @@ const MyReferenceBlock = styled.div`
     color: #000000;
   }
   p {
-    font-family: "Gotham Pro";
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 36px;

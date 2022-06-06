@@ -5,6 +5,7 @@ function MyProfile() {
   return (
     <>
       <Head>
+        
         <title>Saluts: Профиль</title>
         <meta
           name="viewport"

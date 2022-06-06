@@ -6,6 +6,7 @@ function MyReference() {
   return (
     <>
       <Head>
+        
         <title>Saluts: Поделитесь ссылкой с близкими!</title>
         <meta
           name="viewport"

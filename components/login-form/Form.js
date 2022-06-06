@@ -69,7 +69,7 @@ function Form({ title }) {
             color: "#2A2D34",
             fontSize: "24px",
             fontWeight: "300",
-            fontFamily: "Gotham Pro",
+            fontFamily: "Montserrat",
           }}
         >
           {title}

@@ -12,6 +12,7 @@ const Input = styled.input`
   height: 48px;
   padding: 18px 16px;
   font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
   border: none;
   font-size: 15px;
   margin-top: 38px;

@@ -17,6 +17,7 @@ const RegisterForm = styled.form`
     font-weight: 300;
     width: 400px;
     height: 50px;
+    font-family: 'Montserrat', sans-serif;
     border: none;
     //border: 1px solid #E3E5E9;
     margin-bottom: 10px;
@@ -36,6 +37,7 @@ const RegisterForm = styled.form`
     font-size: 16px;
     width: 400px;
     height: 50px;
+    font-family: 'Montserrat', sans-serif;
     border: none;
     background-color: #fc6967;
     transition: all 0.1s linear;
@@ -51,11 +53,13 @@ const RegisterForm = styled.form`
   p {
     color: #858a92;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     a {
       color: #fc6967;
       font-size: 14px;
       text-decoration: underline;
       cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
     }
   }
 `;
@@ -70,7 +74,7 @@ function RegForm({ title }) {
             color: "#2A2D34",
             fontSize: "24px",
             fontWeight: "300",
-            fontFamily: "Gotham Pro",
+            fontFamily: "Montserrat",
           }}
         >
           {title}

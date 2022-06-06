@@ -23,7 +23,7 @@ const ProjectsProjectsGirdSectionItem = styled.div`
   p {
     margin-top: 20px;
     font-size: 24px;
-    font-family: "Gotham Pro";
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-align: center;
     cursor: pointer;

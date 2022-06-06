@@ -22,7 +22,7 @@ const ProfileSection = styled.section`
 `;
 const ProfileTitle = styled.h2`
   font-size: 40px;
-  font-family: "Gotham Pro";
+  font-family: 'Montserrat', sans-serif;
   color: #292d34;
   text-align: center;
   margin-bottom: 80px;

@@ -32,6 +32,7 @@ const FooterListItem = styled.li`
   color: #292d34;
   line-height: 2;
   font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 `;
 const FooterAllRights = styled.p`
   color: #858a92;
@@ -40,6 +41,7 @@ const FooterAllRights = styled.p`
   bottom: 0;
   left: 0;
   font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 `;
 function Footer() {
   return (
