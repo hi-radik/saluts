@@ -6,7 +6,7 @@ function StartProject() {
       <Head>
         <title>
           
-          Saluts: Создайте замечатльное видеопоздравление
+          Saluts: Создайте замечательное видеопоздравление
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
