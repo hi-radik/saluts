@@ -5,13 +5,14 @@ function MyProfile() {
   return (
     <>
       <Head>
+        
         <title>Saluts: Профиль</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
       </Head>
-      <MyProjectsHeader profilePic={"/profile-pic.jpg"} />
+      <MyProjectsHeader profilePic={"/profile-pic.jpg"} profileName={'Гордей Истомин'}/>
       <ProfileMain />
     </>
   );

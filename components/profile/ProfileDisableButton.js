@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 const SubmitButton = styled.button`
   background: #cccccc;
-  font-family: "Gotham Pro";
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   letter-spacing: 0.5px;
   font-weight: 500;

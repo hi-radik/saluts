@@ -1,8 +1,7 @@
-import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import Image from "next/image";
 const Headerino = styled.header`
   display: block;
   position: fixed;
@@ -41,39 +40,30 @@ const HeaderNav = styled.div`
 const Nav = styled.nav`
   display: flex;
   align-items: center;
+  padding-right: 42px;
 `;
 const Ul = styled.ul`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 35px;
+
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   line-height: 15px;
+  font-family: "Montserrat", sans-serif;
 
   color: #1b1a1a;
   a {
     transition: 0.1s all linear;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   a:hover {
     color: #fc5957;
   }
   li {
     display: inline-block;
-    background: url("/header__nav-arrow-png.svg") no-repeat right -0.5px;
-    padding-right: 22px;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
-  }
-  li:last-child {
-    line-height: 20px;
-    display: inline-block;
-    background: url("/header__nav-lock-png.svg") no-repeat left -0.5px;
-    padding-left: 22px;
-    padding-right: 0;
+    font-family: "Montserrat", sans-serif;
   }
 `;
 const HeaderBtn = styled.button`
@@ -82,24 +72,24 @@ const HeaderBtn = styled.button`
   height: 46px;
   color: #ffffff;
   font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   border-radius: 10px;
   border: none;
   box-shadow: 0px 4px 12px -2px rgba(243, 129, 129, 0.8);
   transition: 0.1s all linear;
+  z-index: 11;
   &:hover {
     background-color: #f94a47;
     cursor: pointer;
   }
 `;
-function Header() {
+const InvitedHeader = () => {
   const router = useRouter();
   const handleClick = (e) => {
     e.preventDefault();
     router.push("/start");
   };
-
   return (
     <Headerino>
       <Wrapper>
@@ -113,22 +103,11 @@ function Header() {
           </HeaderLogoDiv>
 
           <HeaderNav>
-            <Nav>
-              <Ul>
-                <li style={{ marginRight: "30px" }}>События</li>
-                <li>
-                  <Link href="/login">
-                    <a>Войти</a>
-                  </Link>
-                </li>
-              </Ul>
-            </Nav>
             <HeaderBtn onClick={handleClick}>Попробовать</HeaderBtn>
           </HeaderNav>
         </HeaderinoChild>
       </Wrapper>
     </Headerino>
   );
-}
-
-export default Header;
+};
+export default InvitedHeader;

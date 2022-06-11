@@ -8,10 +8,11 @@ const Input = styled.input`
   background: #f1f2f4;
   border-radius: 6px;
   margin-left: 55px;
-  width: 425px;
+  width: 500px;
   height: 48px;
   padding: 18px 16px;
   font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
   border: none;
   font-size: 15px;
   margin-top: 38px;

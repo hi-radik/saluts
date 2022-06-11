@@ -20,7 +20,7 @@ const RefDiv = styled.div`
       
   }
   span {
-    font-family: "Gotham Pro";
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 32px;

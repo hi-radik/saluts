@@ -35,6 +35,7 @@ const LoginForm = styled.form`
     font-size: 16px;
     width: 400px;
     height: 50px;
+    font-family: 'Montserrat', sans-serif;
     border: none;
     background-color: #fc6967;
     transition: all 0.1s linear;
@@ -69,7 +70,7 @@ function Form({ title }) {
             color: "#2A2D34",
             fontSize: "24px",
             fontWeight: "300",
-            fontFamily: "Gotham Pro",
+            fontFamily: "Montserrat",
           }}
         >
           {title}

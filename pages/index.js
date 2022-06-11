@@ -5,6 +5,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
+      
       <Head>
         <title>
           Saluts: Групповые видеопоздравления в честь важных событий

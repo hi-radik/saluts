@@ -1,5 +1,4 @@
-import Document from "next/document";
-import Head from "next/head";
+import Document, {Html, Head, Main, NextScript} from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -29,29 +28,21 @@ export default class MyDocument extends Document {
       sheet.seal();
     }
   }
-}
 
-export function SDocument () {
-  return (
+  render() {
+
+    return (
+      <Html>
     <Head>
-   {/* This ways to add css on global website use local asset folder withhtml link tag */}
-    <link
-       href="../asset/GothamPro/gothampro.ttf"
-       rel="stylesheet"
-     />
-      <link
-       href="../asset/GothamPro/gothampro_medium.ttf"
-       rel="stylesheet"
-     />
-     <link
-       href="../asset/GothamPro/gothampro_light.ttf"
-       rel="stylesheet"
-     />
-     <link
-       href="../asset/GothamPro/gothampro_bold.ttf"
-       rel="stylesheet"
-     />
-    
- </Head>
-  )
+      {/* <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin /> */}
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet" />
+    </Head>
+    <body>
+      <Main />
+      <NextScript />
+    </body>
+  </Html>
+    )
+  }
+  
 }

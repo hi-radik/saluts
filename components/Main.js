@@ -11,7 +11,8 @@ const Mainerino = styled.main`
   background-color: #f1f2f4;
 `;
 const Wrapper2 = styled.div`
-  max-width: 1200px;
+  max-width: 1280px;
+  padding: 0 40px;
   height: 100%;
   margin: 0 auto;
   /* background-color: linear-gradient(
@@ -34,6 +35,7 @@ const HomeLeft = styled.div`
   padding-top: 75px;
 `;
 const HomeTitle = styled.h1`
+  font-family: "Montserrat", sans-serif;
   color: #292d34;
   font-size: 40px;
   line-height: 1.12;
@@ -44,6 +46,8 @@ const HomeTitle = styled.h1`
   font-weight: 500;
 `;
 const HomeTitleFirstLetter = styled.span`
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   color: rgba(252, 89, 87, 0.95);
   font-size: 48px;
   line-height: 1.12;
@@ -52,8 +56,8 @@ const HomeDescription = styled.p`
   color: #646870;
   font-weight: 300;
   font-size: 20px;
-  font-size: 20px;
-  line-height: 140%; 
+  font-family: "Montserrat", sans-serif;
+  line-height: 140%;
   display: inline-block;
   margin-bottom: 45px;
   word-spacing: 5px;
@@ -65,8 +69,9 @@ const HomeBtn = styled.button`
   height: 70px;
   color: #ffffff;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   background-color: #fc5957;
+  font-family: "Montserrat", sans-serif;
   border-radius: 10px;
   border: none;
   box-shadow: 0px 4px 10px -2px rgba(243, 129, 129, 0.8);
@@ -86,12 +91,16 @@ const HomeBtnHow = styled.span`
   background: url("/home__btn-how-logo.svg") no-repeat left center;
   padding-left: 35px;
   line-height: 30px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
   &:hover {
     cursor: pointer;
   }
   a {
     font-weight: 300;
     font-size: 17px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
   }
 `;
 const MainPhotoBlock = styled.div`
@@ -124,12 +133,14 @@ const CitationTitle = styled.h2`
   text-align: center;
   margin-bottom: 30px;
   font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 `;
 const CitationName = styled.p`
   color: #292d34;
   font-size: 20px;
   text-align: center;
   font-weight: 300;
+  font-family: "Montserrat", sans-serif;
 `;
 
 const ReasonsSection = styled.section`
@@ -144,11 +155,13 @@ const ReasonsTitle = styled.h2`
   color: #292d34;
   margin-bottom: 40px;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 `;
 const ReasonsDescription = styled.p`
   font-size: 26px;
   font-weight: 300;
+  font-family: "Montserrat", sans-serif;
   color: #000;
   margin-bottom: 80px;
   text-align: center;
@@ -175,16 +188,17 @@ const ReasonsGridOccasionsItem = styled.a`
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
     color: #fc6967;
+    p {
+      color: #fc6967;
+    }
   }
 `;
 const ReasonsGridOccasionsItemTitle = styled.p`
   color: #585e6c;
   font-size: 16px;
   font-weight: 300;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
-  &:hover {
-    color: #fc6967;
-  }
 `;
 
 const ReasonsGridOccasionsItemPicBlock = styled.div`
@@ -207,11 +221,13 @@ const HowSectionTitle = styled.h2`
   text-align: center;
   margin-bottom: 44px;
   font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 `;
 const HowSectionDescription = styled.p`
   font-size: 26px;
   font-weight: 300;
   color: #000;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 80px;
   text-align: center;
   line-height: 1.5;
@@ -250,12 +266,14 @@ const HowSectionGridStepsItemTitle = styled.p`
   text-align: center;
   margin-bottom: 19px;
   font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 `;
 const HowSectionGridStepsItemDescription = styled.p`
   font-size: 14px;
   font-weight: 300;
   color: #646870;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 `;
 const VideoSection = styled.section`
   width: 100%;
@@ -271,6 +289,7 @@ const VideoSectionTitle = styled.h2`
   margin-top: 0;
   margin-bottom: 93px;
   font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 `;
 const VideoSectionVideoBlock = styled.div`
   width: 100%;
@@ -284,6 +303,7 @@ const VideoSectionVideoTitle = styled.h2`
   top: 45%;
   margin: 0 auto;
   font-size: 40px;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   z-index: 50;
   word-spacing: 5px;

@@ -15,9 +15,10 @@ const Headerino = styled.header`
   box-shadow: 0 0 20px rgb(112 119 138 / 20%);
 `;
 const Wrapper = styled.div`
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   height: 100%;
+  padding: 0 40px;
 `;
 const HeaderinoChild = styled.div`
   display: flex;
@@ -48,13 +49,14 @@ const Ul = styled.ul`
   flex-wrap: wrap;
 
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 15px;
-  font-family: 'Gotham Pro';
+  font-family: 'Montserrat', sans-serif;
 
   color: #1b1a1a;
   a {
     transition: 0.1s all linear;
+    font-family: 'Montserrat', sans-serif;
   }
   a:hover {
     color: #fc5957;
@@ -62,8 +64,7 @@ const Ul = styled.ul`
   li {
     display: inline-block;
     cursor: pointer;
-    font-family: 'Gotham Pro';
-  }
+    font-family: 'Montserrat', sans-serif;}
 `;
 const HeaderBtn = styled.button`
   background-color: #fc5957;
@@ -71,7 +72,7 @@ const HeaderBtn = styled.button`
   height: 46px;
   color: #ffffff;
   font-size: 15px;
-  font-family: 'Gotham Pro';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   border-radius: 10px;
   border: none;
@@ -84,7 +85,7 @@ const HeaderBtn = styled.button`
   }
 `;
 
-function MyProjectsHeader({ profilePic }) {
+function MyProjectsHeader({ profilePic, profileName }) {
   const router = useRouter();
   const handleClick = (e) => {
     e.preventDefault();
@@ -106,7 +107,7 @@ function MyProjectsHeader({ profilePic }) {
           <HeaderNav>
             <Nav>
               <Ul>
-                <li style={{ marginRight: "42px" }}>События</li>
+                <li style={{ marginRight: "42px" }}>{profileName}</li>
                 <li style={{ height: "38px" }}>
                   <div
                     style={{ width: "38px", height: "38px" }}

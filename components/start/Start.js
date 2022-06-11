@@ -9,7 +9,7 @@ import OccasionInput from "./OccasionInput";
 const Startino = styled.div`
   background-color: #f1f2f4;
   width: 100%;
-  height: 1700px;
+  height: 1080px;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -37,6 +37,7 @@ const StartinoFirstStep = styled.div`
   }
   h2 {
     font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     line-height: 23px;
     margin-bottom: 43px;
@@ -44,6 +45,7 @@ const StartinoFirstStep = styled.div`
   }
   label {
     font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 15px;
     margin-bottom: 12px;
@@ -55,6 +57,7 @@ const StartinoFirstStep = styled.div`
     border-radius: 6px;
     width: 500px;
     height: 48px;
+    font-family: 'Montserrat', sans-serif;
     padding: 18px 16px;
     font-weight: 300;
     border: none;
@@ -83,6 +86,7 @@ const StartinoSecondStep = styled.div`
 
   h2 {
     font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     line-height: 23px;
     color: #000000;
@@ -92,6 +96,7 @@ const StartinoSecondStep = styled.div`
   p {
     font-weight: 300;
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
     line-height: 17px;
     margin: 0 auto;
     color: rgba(88, 94, 108, 0.77);
@@ -110,6 +115,11 @@ const StartinoItems = styled.div`
   flex-wrap: wrap;
   padding-left: 55px;
   /* margin-bottom: 58px; */
+  div {
+    label {
+      padding-top: 12px;
+    }
+  }
 `;
 
 function Start() {

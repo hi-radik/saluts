@@ -10,9 +10,10 @@ const Footerino = styled.footer`
   padding-bottom: 25px;
 `;
 const Wrapper2 = styled.div`
-  max-width: 1200px;
+  max-width: 1280px;
   height: 100%;
   margin: 0 auto;
+  padding: 0 40px;
   /* background-color: linear-gradient(
     213.75deg,
     rgba(241, 242, 244, 0.9) 0%,
@@ -32,6 +33,7 @@ const FooterListItem = styled.li`
   color: #292d34;
   line-height: 2;
   font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 `;
 const FooterAllRights = styled.p`
   color: #858a92;
@@ -40,6 +42,7 @@ const FooterAllRights = styled.p`
   bottom: 0;
   left: 0;
   font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 `;
 function Footer() {
   return (
